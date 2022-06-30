@@ -1,0 +1,59 @@
+{ "frames": {
+   "ChickenedOut_explosion 0.aseprite": {
+    "frame": { "x": 0, "y": 0, "w": 23, "h": 23 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 44, "y": 61, "w": 23, "h": 23 },
+    "sourceSize": { "w": 120, "h": 120 },
+    "duration": 100
+   },
+   "ChickenedOut_explosion 1.aseprite": {
+    "frame": { "x": 23, "y": 0, "w": 23, "h": 23 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 44, "y": 61, "w": 23, "h": 23 },
+    "sourceSize": { "w": 120, "h": 120 },
+    "duration": 100
+   },
+   "ChickenedOut_explosion 2.aseprite": {
+    "frame": { "x": 46, "y": 0, "w": 23, "h": 23 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 44, "y": 61, "w": 23, "h": 23 },
+    "sourceSize": { "w": 120, "h": 120 },
+    "duration": 100
+   },
+   "ChickenedOut_explosion 3.aseprite": {
+    "frame": { "x": 69, "y": 0, "w": 23, "h": 23 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 44, "y": 61, "w": 23, "h": 23 },
+    "sourceSize": { "w": 120, "h": 120 },
+    "duration": 100
+   },
+   "ChickenedOut_explosion 4.aseprite": {
+    "frame": { "x": 92, "y": 0, "w": 23, "h": 23 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 44, "y": 61, "w": 23, "h": 23 },
+    "sourceSize": { "w": 120, "h": 120 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.25",
+  "image": "explosion.png",
+  "format": "RGBA8888",
+  "size": { "w": 115, "h": 23 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "chicken_turnaround", "from": 0, "to": 4, "direction": "forward" }
+  ],
+  "layers": [
+   { "name": "explosion", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}

@@ -1,18 +1,34 @@
 import Phaser from 'phaser';
 
+const CHICKEN_FRAMES = 'chicken';
+class Scene extends Phaser.Scene {
+	preload() {
+		this.load.atlas(CHICKEN_FRAMES, 'chicken/chicken.png', 'chicken/chicken.json');
+	}
+
+	create() {
+		const chickenConfig = {
+			key: 'walk',
+			frames: CHICKEN_FRAMES
+		}
+		this.add.image(0,0, 'chicken').setOrigin(0,0)
+	}
+
+	update() {
+
+	}
+}
+
 const Game = () => {
 	const config = {
 		type: Phaser.AUTO,
-		width: 800,
-		height: 600,
-		scene: { preload, create, update }
+		pixelArt: true,
+		width: 100,
+		height: 75,
+		scene: [Scene]
 	};
 
 	new Phaser.Game(config);
 };
-
-const preload = () => {};
-const create = () => {};
-const update = () => {};
 
 export default Game;
