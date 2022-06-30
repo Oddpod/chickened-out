@@ -1,17 +1,19 @@
 import Phaser from 'phaser';
+import Chicken, { CHICKEN_FRAMES } from '~/actors/chicken';
 
-const CHICKEN_FRAMES = 'chicken';
 class Scene extends Phaser.Scene {
 	preload() {
-		this.load.atlas(CHICKEN_FRAMES, 'chicken/chicken.png', 'chicken/chicken.json');
+		this.load.atlas(CHICKEN_FRAMES, 'chicken/chicken.png', 'chicken/chicken.json')
 	}
 
 	create() {
-		const chickenConfig = {
-			key: 'walk',
-			frames: CHICKEN_FRAMES
-		}
-		this.add.image(0,0, 'chicken').setOrigin(0,0)
+		this.anims.create(Chicken);
+		this.add.sprite(
+			Number(this.game.config.width)/2,
+			Number(this.game.config.height)/2,
+			CHICKEN_FRAMES,
+			'Sprite-0002 0.'
+		).play('idle');
 	}
 
 	update() {
@@ -20,15 +22,16 @@ class Scene extends Phaser.Scene {
 }
 
 const Game = () => {
-	const config = {
+	const config: Phaser.Types.Core.GameConfig = {
 		type: Phaser.AUTO,
+		parent: 'game-screen',
 		pixelArt: true,
 		width: 100,
 		height: 75,
 		scene: [Scene]
-	};
+	}
 
-	new Phaser.Game(config);
+	new Phaser.Game(config)
 };
 
 export default Game;

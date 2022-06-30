@@ -7,14 +7,6 @@
     "sourceSize": { "w": 7, "h": 7 },
     "duration": 100
    },
-   "Sprite-0002 1.": {
-    "frame": { "x": 7, "y": 0, "w": 7, "h": 7 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 7, "h": 7 },
-    "sourceSize": { "w": 7, "h": 7 },
-    "duration": 100
-   },
    "Sprite-0002 2.": {
     "frame": { "x": 14, "y": 0, "w": 7, "h": 7 },
     "rotated": false,
